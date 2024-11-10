@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('login.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.content1 {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.about {
+    font-size: 20px;
+	color:rgb(38, 239, 81)
+}
+
+.highlight {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #FFD700; /* Yellow color */
+}
+
+.content {
+    width: 400px;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 600;
+    color: #F7F7F7;
+    margin-bottom: 20px;
+}
+
+.field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #F7F7F7;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.field input[type="submit"] {
+    background: linear-gradient(45deg, #29d332, #49a84e);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+}
+
+.field input[type="submit"]:hover {
+    background: linear-gradient(45deg, #4acc43, #bbc528);
+	color: black;
+}
+
+.signup {
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+.signup a {
+    color: #66ee60;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 26px;
+    }
+
+    .about {
+        font-size: 18px;
+    }
+
+    .field input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content, .content1 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+}
